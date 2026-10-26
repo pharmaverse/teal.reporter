@@ -14,9 +14,9 @@ For more details see the vignette:
 
 This function is deprecated and will be removed in the next release.
 Please use
-[`preview_report_button_ui()`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer.md)
+[`preview_report_button_ui()`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer.md)
 and
-[`preview_report_button_srv()`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer.md)
+[`preview_report_button_srv()`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer.md)
 to create a preview button that opens a modal with the report preview.
 
 ## Usage

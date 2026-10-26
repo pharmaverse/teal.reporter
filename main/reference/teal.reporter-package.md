@@ -7,12 +7,11 @@ from `shiny` modules.
 
 Useful links:
 
-- <https://github.com/insightsengineering/teal.reporter>
+- <https://github.com/pharmaverse/teal.reporter>
 
-- <https://insightsengineering.github.io/teal.reporter/>
+- <https://pharmaverse.github.io/teal.reporter/>
 
-- Report bugs at
-  <https://github.com/insightsengineering/teal.reporter/issues>
+- Report bugs at <https://github.com/pharmaverse/teal.reporter/issues>
 
 ## Author
 

@@ -27,7 +27,7 @@ toHTML(x, ...)
   - `ReportCard`: Deprecated R6 class for report cards
 
   - `code_chunk`: Code blocks created with
-    [`code_chunk()`](https://insightsengineering.github.io/teal.reporter/reference/code_chunk.md)
+    [`code_chunk()`](https://pharmaverse.github.io/teal.reporter/reference/code_chunk.md)
 
   - `chunk_output`: Output from evaluated code chunks
 
@@ -95,7 +95,7 @@ rendered as styled HTML with proper formatting for each content type.
 emphasis, and other markdown features.
 
 **Code Chunks:** Created with
-[`code_chunk()`](https://insightsengineering.github.io/teal.reporter/reference/code_chunk.md),
+[`code_chunk()`](https://pharmaverse.github.io/teal.reporter/reference/code_chunk.md),
 these are rendered as collapsible Bootstrap accordions with syntax
 highlighting. The accordion includes the programming language indicator
 and an icon.
@@ -126,16 +126,16 @@ You can override the `browsable` behavior with:
 
 ## See also
 
-- [`teal_report()`](https://insightsengineering.github.io/teal.reporter/reference/teal_report.md)
+- [`teal_report()`](https://pharmaverse.github.io/teal.reporter/reference/teal_report.md)
   for creating report objects
 
-- [`teal_card()`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)
+- [`teal_card()`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)
   for creating report cards
 
-- [`code_chunk()`](https://insightsengineering.github.io/teal.reporter/reference/code_chunk.md)
+- [`code_chunk()`](https://pharmaverse.github.io/teal.reporter/reference/code_chunk.md)
   for creating code blocks
 
-- [`render()`](https://insightsengineering.github.io/teal.reporter/reference/render.md)
+- [`render()`](https://pharmaverse.github.io/teal.reporter/reference/render.md)
   for rendering complete reports to files
 
 ## Examples
@@ -203,30 +203,30 @@ style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;"\> \#\>
 \<h2\>Document section\</h2\> \#\> \#\> \<p\>Lorem ipsum dolor sit
 amet\</p\> \#\> \#\> \<div class="accordion code_chunk"
 data-require-bs-caller="accordion()" data-require-bs-version="5"
-id="bslib-accordion-7119"\> \#\> \<div class="accordion-item"
+id="bslib-accordion-8583"\> \#\> \<div class="accordion-item"
 data-value="rcode"\> \#\> \<div class="accordion-header"\> \#\> \<button
 class="accordion-button collapsed" type="button"
-data-bs-toggle="collapse" data-bs-target="#bslib-accordion-panel-4183"
-aria-expanded="false" aria-controls="bslib-accordion-panel-4183"\> \#\>
+data-bs-toggle="collapse" data-bs-target="#bslib-accordion-panel-8160"
+aria-expanded="false" aria-controls="bslib-accordion-panel-8160"\> \#\>
 \<div class="accordion-icon"\>\</div\> \#\> \<div
 class="accordion-title"\> \#\> \<span\> \#\> \<i class="fas fa-code"
 role="presentation" aria-label="code icon"\>\</i\> \#\> R \#\> \</span\>
 \#\> \</div\> \#\> \</button\> \#\> \</div\> \#\> \<div
-id="bslib-accordion-panel-4183" class="accordion-collapse collapse"\>
+id="bslib-accordion-panel-8160" class="accordion-collapse collapse"\>
 \#\> \<div class="accordion-body"\> \#\> \<pre\>\<code
 class="language-R"\>a \&lt;- 2\</code\>\</pre\> \#\> \</div\> \#\>
 \</div\> \#\> \</div\> \#\> \</div\> \#\> \<div class="accordion
 code_chunk" data-require-bs-caller="accordion()"
-data-require-bs-version="5" id="bslib-accordion-7336"\> \#\> \<div
+data-require-bs-version="5" id="bslib-accordion-4803"\> \#\> \<div
 class="accordion-item" data-value="rcode"\> \#\> \<div
 class="accordion-header"\> \#\> \<button class="accordion-button
 collapsed" type="button" data-bs-toggle="collapse"
-data-bs-target="#bslib-accordion-panel-8800" aria-expanded="false"
-aria-controls="bslib-accordion-panel-8800"\> \#\> \<div
+data-bs-target="#bslib-accordion-panel-5898" aria-expanded="false"
+aria-controls="bslib-accordion-panel-5898"\> \#\> \<div
 class="accordion-icon"\>\</div\> \#\> \<div class="accordion-title"\>
 \#\> \<span\> \#\> \<i class="fas fa-code" role="presentation"
 aria-label="code icon"\>\</i\> \#\> R \#\> \</span\> \#\> \</div\> \#\>
-\</button\> \#\> \</div\> \#\> \<div id="bslib-accordion-panel-8800"
+\</button\> \#\> \</div\> \#\> \<div id="bslib-accordion-panel-5898"
 class="accordion-collapse collapse"\> \#\> \<div
 class="accordion-body"\> \#\> \<pre\>\<code
 class="language-R"\>plot(a)\</code\>\</pre\> \#\> \</div\> \#\> \</div\>

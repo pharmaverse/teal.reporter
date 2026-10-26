@@ -5,7 +5,7 @@
 This vignette demonstrates how to create a fully functional reportable
 Shiny application using `teal.reporter`. While `teal` provides automatic
 reporting functionality (as described in the [Getting
-Started](https://insightsengineering.github.io/teal.reporter/articles/getting-started-with-teal-reporter.md)
+Started](https://pharmaverse.github.io/teal.reporter/articles/getting-started-with-teal-reporter.md)
 vignette), this guide shows how to integrate reporting capabilities into
 standalone Shiny applications or when you need more control over the
 reporting process.
@@ -14,10 +14,10 @@ Before diving into this vignette, we recommend familiarizing yourself
 with:
 
 - [Getting Started with
-  teal.reporter](https://insightsengineering.github.io/teal.reporter/articles/getting-started-with-teal-reporter.md) -
+  teal.reporter](https://pharmaverse.github.io/teal.reporter/articles/getting-started-with-teal-reporter.md) -
   Overview of the package and its integration with `teal`
 - [teal_report
-  Class](https://insightsengineering.github.io/teal.reporter/articles/teal-report-class.md) -
+  Class](https://pharmaverse.github.io/teal.reporter/articles/teal-report-class.md) -
   Understanding `teal_report` and `teal_card` objects, which are the
   foundation for creating reproducible report content
 
@@ -51,7 +51,7 @@ First, load the required packages:
 
 \
 [`library`](https://rdrr.io/r/base/library.html)`(`[`shiny`](https://shiny.posit.co/)`)`\
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.reporter`](https://github.com/insightsengineering/teal.reporter)`)`
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.reporter`](https://github.com/pharmaverse/teal.reporter)`)`
 
 A simple `shiny` app with all reporter modules integrated:
 
@@ -62,11 +62,11 @@ A simple `shiny` app with all reporter modules integrated:
 `    ``bslib``::`[`layout_sidebar`](https://rstudio.github.io/bslib/reference/sidebar.html)`(`\
 `      sidebar ``=`` ``bslib``::`[`sidebar`](https://rstudio.github.io/bslib/reference/sidebar.html)`(`\
 `        ``### REPORTER`\
-`        ``teal.reporter``::`[`add_card_button_ui`](https://insightsengineering.github.io/teal.reporter/reference/add_card_button.md)`(``"add_card"``, label ``=`` ``"Add Card"``)``,`\
-`        ``teal.reporter``::`[`preview_report_button_ui`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer.md)`(``"preview"``)``,`\
-`        ``teal.reporter``::`[`download_report_button_ui`](https://insightsengineering.github.io/teal.reporter/reference/download_report_button.md)`(``"download"``, label ``=`` ``"Download"``)``,`\
-`        ``teal.reporter``::`[`report_load_ui`](https://insightsengineering.github.io/teal.reporter/reference/load_report_button.md)`(``"load"``, label ``=`` ``"Load"``)``,`\
-`        ``teal.reporter``::`[`reset_report_button_ui`](https://insightsengineering.github.io/teal.reporter/reference/reset_report_button.md)`(``"reset"``, label ``=`` ``"Reset"``)``,`\
+`        ``teal.reporter``::`[`add_card_button_ui`](https://pharmaverse.github.io/teal.reporter/reference/add_card_button.md)`(``"add_card"``, label ``=`` ``"Add Card"``)``,`\
+`        ``teal.reporter``::`[`preview_report_button_ui`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer.md)`(``"preview"``)``,`\
+`        ``teal.reporter``::`[`download_report_button_ui`](https://pharmaverse.github.io/teal.reporter/reference/download_report_button.md)`(``"download"``, label ``=`` ``"Download"``)``,`\
+`        ``teal.reporter``::`[`report_load_ui`](https://pharmaverse.github.io/teal.reporter/reference/load_report_button.md)`(``"load"``, label ``=`` ``"Load"``)``,`\
+`        ``teal.reporter``::`[`reset_report_button_ui`](https://pharmaverse.github.io/teal.reporter/reference/reset_report_button.md)`(``"reset"``, label ``=`` ``"Reset"``)``,`\
 `        ``###`\
 `      ``)``,`\
 `      ``bslib``::`[`card`](https://rstudio.github.io/bslib/reference/card.html)`(`\
@@ -85,13 +85,13 @@ A simple `shiny` app with all reporter modules integrated:
 \
 `server`` ``<-`` ``function``(``input``, ``output``, ``session``)`` ``{`\
 `  ``# Here we start with empty teal_report object`\
-`  ``data`` ``<-`` `[`teal_report`](https://insightsengineering.github.io/teal.reporter/reference/teal_report.md)`(``)`\
+`  ``data`` ``<-`` `[`teal_report`](https://pharmaverse.github.io/teal.reporter/reference/teal_report.md)`(``)`\
 \
 `  ``# Create summary table`\
 `  ``with_summary_table`` ``<-`` `[`reactive`](https://rdrr.io/pkg/shiny/man/reactive.html)`(``{`\
 `    `[`req`](https://rdrr.io/pkg/shiny/man/req.html)`(``input``$``stat``)`\
 `    ``# Add section's header with dynamic content`\
-`    `[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``data``)`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(`[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``data``)``, `[`paste`](https://rdrr.io/r/base/paste.html)`(``"## Summary Statistics:"``, ``input``$``stat``)``)`\
+`    `[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``data``)`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(`[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``data``)``, `[`paste`](https://rdrr.io/r/base/paste.html)`(``"## Summary Statistics:"``, ``input``$``stat``)``)`\
 \
 `    ``# Execute dynamically generated code (this stores evaluated code-chunk and its output)`\
 `    `[`within`](https://rdrr.io/r/base/with.html)`(`\
@@ -111,20 +111,20 @@ A simple `shiny` app with all reporter modules integrated:
 \
 `  ``output``$``table`` ``<-`` `[`renderTable`](https://rdrr.io/pkg/shiny/man/renderTable.html)`(``{`\
 `    ``` # extract `summary_table` from teal_report object ``\
-`    ``teal.code``::`[`get_outputs`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_outputs.html)`(``with_summary_table``(``)``)``[[``1``]``]`\
+`    ``teal.code``::`[`get_outputs`](https://rdrr.io/pkg/teal.code/man/get_outputs.html)`(``with_summary_table``(``)``)``[[``1``]``]`\
 `  ``}``)`\
 \
 `  ``### REPORTER`\
-`  ``reporter`` ``<-`` `[`Reporter`](https://insightsengineering.github.io/teal.reporter/reference/Reporter.md)`$``new``(``)`\
+`  ``reporter`` ``<-`` `[`Reporter`](https://pharmaverse.github.io/teal.reporter/reference/Reporter.md)`$``new``(``)`\
 `  ``reporter``$``set_id``(``"reporter_demo"``)`\
 \
 `  ``# extract teal_card object and hand it over to add_card_button_srv`\
-`  ``card_r`` ``<-`` `[`reactive`](https://rdrr.io/pkg/shiny/man/reactive.html)`(`[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``with_summary_table``(``)``)``)`\
-`  ``teal.reporter``::`[`add_card_button_srv`](https://insightsengineering.github.io/teal.reporter/reference/add_card_button.md)`(``"add_card"``, reporter ``=`` ``reporter``, card_fun ``=`` ``card_r``)`\
-`  ``teal.reporter``::`[`preview_report_button_srv`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer.md)`(``"preview"``, ``reporter``)`\
-`  ``teal.reporter``::`[`download_report_button_srv`](https://insightsengineering.github.io/teal.reporter/reference/download_report_button.md)`(``"download"``, ``reporter``)`\
-`  ``teal.reporter``::`[`report_load_srv`](https://insightsengineering.github.io/teal.reporter/reference/load_report_button.md)`(``"load"``, ``reporter``)`\
-`  ``teal.reporter``::`[`reset_report_button_srv`](https://insightsengineering.github.io/teal.reporter/reference/reset_report_button.md)`(``"reset"``, ``reporter``)`\
+`  ``card_r`` ``<-`` `[`reactive`](https://rdrr.io/pkg/shiny/man/reactive.html)`(`[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``with_summary_table``(``)``)``)`\
+`  ``teal.reporter``::`[`add_card_button_srv`](https://pharmaverse.github.io/teal.reporter/reference/add_card_button.md)`(``"add_card"``, reporter ``=`` ``reporter``, card_fun ``=`` ``card_r``)`\
+`  ``teal.reporter``::`[`preview_report_button_srv`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer.md)`(``"preview"``, ``reporter``)`\
+`  ``teal.reporter``::`[`download_report_button_srv`](https://pharmaverse.github.io/teal.reporter/reference/download_report_button.md)`(``"download"``, ``reporter``)`\
+`  ``teal.reporter``::`[`report_load_srv`](https://pharmaverse.github.io/teal.reporter/reference/load_report_button.md)`(``"load"``, ``reporter``)`\
+`  ``teal.reporter``::`[`reset_report_button_srv`](https://pharmaverse.github.io/teal.reporter/reference/reset_report_button.md)`(``"reset"``, ``reporter``)`\
 `  ``###`\
 `}`\
 \

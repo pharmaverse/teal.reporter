@@ -10,7 +10,7 @@ form a report output from a `shiny` app.
 
 This class is deprecated. Use `teal_report` class instead for new
 implementations. See
-[`vignette("teal-report-class", "teal.reporter")`](https://insightsengineering.github.io/teal.reporter/articles/teal-report-class.md)
+[`vignette("teal-report-class", "teal.reporter")`](https://pharmaverse.github.io/teal.reporter/articles/teal-report-class.md)
 for more information.
 
 ## Methods
@@ -237,7 +237,7 @@ Get all content blocks from this `ReportCard`.
 
 #### Returns
 
-[`teal_card()`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)
+[`teal_card()`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)
 containing appended elements.
 
 #### Examples
@@ -447,12 +447,12 @@ card <- ReportCard$new()$append_text("Some text")$append_plot(
 #> `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
 card$get_content()
 
-#> $`290ea5d8`
+#> $d26e5880
 #> [1] "Some text"
 #> 
-#> $`0ba0f6e2`
+#> $`78feb7a3`
 #> 
-#> $`6073aa68`
+#> $`44527ed6`
 #> [1] "Some text"
 #> 
 #> attr(,"class")
@@ -488,12 +488,12 @@ card <- ReportCard$new()$append_text("Some text")$append_plot(
 #> `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
 card$get_content()
 
-#> $`8479cd8a`
+#> $`577d291c`
 #> [1] "Some text"
 #> 
-#> $e06df220
+#> $`53439315`
 #> 
-#> $`490674a9`
+#> $de8e0325
 #> [1] "Some text"
 #> 
 #> attr(,"class")
@@ -513,12 +513,12 @@ card$get_content()
 card$to_list(tempdir())
 #> Warning: The `output_dir` argument of `ReportCard$to_list()` is deprecated as of
 #> teal.reporter 0.6.0.
-#> $`8479cd8a`
+#> $`577d291c`
 #> [1] "Some text"
 #> 
-#> $e06df220
+#> $`53439315`
 #> 
-#> $`490674a9`
+#> $de8e0325
 #> [1] "Some text"
 #> 
 #> attr(,"metadata")
@@ -541,12 +541,12 @@ card <- ReportCard$new()$append_text("Some text")$append_plot(
 #> `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
 card$get_content()
 
-#> $`28e1df61`
+#> $`9b947341`
 #> [1] "Some text"
 #> 
-#> $ab8b5ea4
+#> $cf807b23
 #> 
-#> $f6af3a68
+#> $ac7466c0
 #> [1] "Some text"
 #> 
 #> attr(,"class")
@@ -614,7 +614,7 @@ card <- ReportCard$new()$append_content(code_chunk("foo <- 2"))
 card <- ReportCard$new()$append_text("Some text")$append_metadata("rc", "a <- 2 + 2")
 
 card$get_content()
-#> $`7e01cf8b`
+#> $b6462506
 #> [1] "Some text"
 #> 
 #> attr(,"class")

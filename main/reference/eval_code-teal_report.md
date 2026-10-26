@@ -44,7 +44,7 @@ contents of the environment are always a result of the stored code.
 
 ## See also
 
-[within.qenv](https://insightsengineering.github.io/teal.code/latest-tag/reference/within.qenv.html)
+[within.qenv](https://rdrr.io/pkg/teal.code/man/within.qenv.html)
 
 ## Examples
 
@@ -57,7 +57,7 @@ tr <- teal.code::eval_code(tr, "b <- 2L # with comment")
 tr <- teal.code::eval_code(tr, quote(library(checkmate)))
 tr <- teal.code::eval_code(tr, expression(assert_number(a)))
 teal_card(tr)
-#> $f605b539
+#> $`37b6aaae`
 #> [1] "iris <- iris"
 #> attr(,"params")
 #> list()
@@ -66,7 +66,7 @@ teal_card(tr)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $dc83324e
+#> $`649ecd98`
 #> [1] "a <- 1"
 #> attr(,"params")
 #> list()
@@ -75,7 +75,7 @@ teal_card(tr)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $cebcc330
+#> $`0a3a3283`
 #> [1] "b <- 2L # with comment"
 #> attr(,"params")
 #> list()
@@ -84,7 +84,7 @@ teal_card(tr)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $`2e0afc2f`
+#> $`1c6d3035`
 #> [1] "library(checkmate)"
 #> attr(,"params")
 #> list()
@@ -93,7 +93,7 @@ teal_card(tr)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $be9f9b9e
+#> $`7cc422d0`
 #> [1] "assert_number(a)"
 #> attr(,"params")
 #> list()

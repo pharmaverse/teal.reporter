@@ -65,8 +65,8 @@ methods only function correctly when the first element is a `teal_card`.
 
 ## See also
 
-[`code_chunk()`](https://insightsengineering.github.io/teal.reporter/reference/code_chunk.md),
-[`render()`](https://insightsengineering.github.io/teal.reporter/reference/render.md),
+[`code_chunk()`](https://pharmaverse.github.io/teal.reporter/reference/code_chunk.md),
+[`render()`](https://pharmaverse.github.io/teal.reporter/reference/render.md),
 `toHTML()`
 
 ## Examples
@@ -93,10 +93,10 @@ report <- c(
 
 # Subset the report to keep only the first two elements
 report[1:2]
-#> $be2fde43
+#> $`4378c854`
 #> [1] "## Headline"
 #> 
-#> $f43772bf
+#> $`4789b059`
 #> [1] "This is `iris` table"
 #> 
 #> attr(,"class")
@@ -355,7 +355,7 @@ print(mtcars)
     
 
 if ([interactive](https://rdrr.io/r/base/interactive.html)()) {
-[render](https://insightsengineering.github.io/teal.reporter/reference/render.md)(report,
+[render](https://pharmaverse.github.io/teal.reporter/reference/render.md)(report,
 output_format =
 rmarkdown::[pdf_document](https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html)())
 }

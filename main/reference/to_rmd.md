@@ -53,7 +53,7 @@ include:
 
 - `character`
 
-- [`code_chunk()`](https://insightsengineering.github.io/teal.reporter/reference/code_chunk.md)
+- [`code_chunk()`](https://pharmaverse.github.io/teal.reporter/reference/code_chunk.md)
   objects
 
 - `ggplot2` plots
@@ -79,7 +79,7 @@ to_rmd(c("## This is a simple text block.", "", "With a paragraph break."))
 to_rmd(code_chunk("summary(cars)"))
 #> [1] "```{R}\nsummary(cars)\n```"
 to_rmd(data.frame(x = 1:10, y = 21:30), folder_path = tempdir())
-#> [1] "```{r echo = FALSE, eval = TRUE}\nreadRDS('/tmp/RtmpJoVyzy/report_item_c276db895b7.rds')\n```"
+#> [1] "```{r echo = FALSE, eval = TRUE}\nreadRDS('/tmp/RtmptNfDVO/report_item_5e7701547f7.rds')\n```"
 
 # Example with ggplot2 will create a temporary RDS file in the tempdir()
 to_rmd(
@@ -87,5 +87,5 @@ to_rmd(
     ggplot2::geom_point(),
   folder_path = tempdir() # internal argument of ggplot2 method
 )
-#> [1] "```{r echo = FALSE, eval = TRUE, fig.width = 8.333333, fig.height = 6.250000}\nreadRDS('/tmp/RtmpJoVyzy/report_item_c2757ae4028.rds')\n```"
+#> [1] "```{r echo = FALSE, eval = TRUE, fig.width = 8.333333, fig.height = 6.250000}\nreadRDS('/tmp/RtmptNfDVO/report_item_5e719016784.rds')\n```"
 ```

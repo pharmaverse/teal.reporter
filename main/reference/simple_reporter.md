@@ -3,11 +3,11 @@
 Module provides compact UI and server functions for managing a report in
 a `shiny` app. This module combines functionalities for [adding cards to
 a
-report](https://insightsengineering.github.io/teal.reporter/reference/add_card_button.md),
+report](https://pharmaverse.github.io/teal.reporter/reference/add_card_button.md),
 [downloading the
-report](https://insightsengineering.github.io/teal.reporter/reference/download_report_button.md),
+report](https://pharmaverse.github.io/teal.reporter/reference/download_report_button.md),
 and [resetting report
-content](https://insightsengineering.github.io/teal.reporter/reference/reset_report_button.md).
+content](https://pharmaverse.github.io/teal.reporter/reference/reset_report_button.md).
 
 For more details see the vignette:
 `vignette("simpleReporter", "teal.reporter")`.
@@ -40,9 +40,9 @@ simple_reporter_srv(
 - card_fun:
 
   (`reactive` or `function`) which returns a
-  [`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)
+  [`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)
   or
-  [`ReportCard`](https://insightsengineering.github.io/teal.reporter/reference/ReportCard.md)
+  [`ReportCard`](https://pharmaverse.github.io/teal.reporter/reference/ReportCard.md)
   instance.
 
 - global_knitr:

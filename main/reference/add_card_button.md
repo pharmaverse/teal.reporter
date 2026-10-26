@@ -30,7 +30,7 @@ add_card_button_srv(id, reporter, card_fun, card_title = "")
 - card_fun:
 
   (`function`) which returns a
-  [`ReportCard`](https://insightsengineering.github.io/teal.reporter/reference/ReportCard.md)
+  [`ReportCard`](https://pharmaverse.github.io/teal.reporter/reference/ReportCard.md)
   instance. See `Details`.
 
 - card_title:
@@ -62,7 +62,7 @@ instance and optionally customize it:
   `teal_card`.
 
 This module supports using a subclass of
-[`ReportCard`](https://insightsengineering.github.io/teal.reporter/reference/ReportCard.md)
+[`ReportCard`](https://pharmaverse.github.io/teal.reporter/reference/ReportCard.md)
 for added flexibility. A subclass instance should be passed as the
 default value of the `teal_card` argument in the `card_fun` function.
 See below:

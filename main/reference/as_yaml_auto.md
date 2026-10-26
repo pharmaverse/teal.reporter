@@ -26,7 +26,7 @@ as_yaml_auto(
 - as_header:
 
   (`logical(1)`) optionally wrap with result with the internal
-  [`md_header()`](https://insightsengineering.github.io/teal.reporter/reference/md_header.md),
+  [`md_header()`](https://pharmaverse.github.io/teal.reporter/reference/md_header.md),
   default `TRUE`.
 
 - convert_logi:
@@ -48,7 +48,7 @@ as_yaml_auto(
 `character` with `rmd_yaml_header` class, result of
 [`yaml::as.yaml`](https://yaml.r-lib.org/reference/as.yaml.html),
 optionally wrapped with internal
-[`md_header()`](https://insightsengineering.github.io/teal.reporter/reference/md_header.md).
+[`md_header()`](https://pharmaverse.github.io/teal.reporter/reference/md_header.md).
 
 ## Details
 

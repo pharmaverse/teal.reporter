@@ -17,9 +17,9 @@ effort for users and developers.
 ## Integration with `teal`
 
 Discover how teal.reporter complements the
-[`teal`](https://insightsengineering.github.io/teal/) framework by
-visiting the dedicated [on integrating reporting in
-`teal`.](https://insightsengineering.github.io/teal/latest-tag/articles/adding-support-for-reporting.html).
+[`teal`](https://pharmaverse.github.io/teal/) framework by visiting the
+dedicated [on integrating reporting in
+`teal`.](https://pharmaverse.github.io/teal/latest-tag/articles/adding-support-for-reporting.html).
 
 ## Automatic Report Functionality
 
@@ -31,7 +31,7 @@ outputs to reports without any additional setup.
 
 For more details on working with `teal_report` objects and their
 capabilities, see the [teal_report class
-vignette](https://insightsengineering.github.io/teal.reporter/articles/teal-report-class.md).
+vignette](https://pharmaverse.github.io/teal.reporter/articles/teal-report-class.md).
 
 ### More control
 

@@ -10,35 +10,35 @@ Downloads](http://cranlogs.r-pkg.org/badges/last-month/teal.reporter?color=green
 Downloads](http://cranlogs.r-pkg.org/badges/last-week/teal.reporter?color=green)](https://cran.r-project.org/package=teal.reporter)
 
 [![Check
-🛠](https://github.com/insightsengineering/teal.reporter/actions/workflows/check.yaml/badge.svg)](https://insightsengineering.github.io/teal.reporter/main/unit-test-report/)
+🛠](https://github.com/pharmaverse/teal.reporter/actions/workflows/check.yaml/badge.svg)](https://pharmaverse.github.io/teal.reporter/main/unit-test-report/)
 [![Docs
-📚](https://github.com/insightsengineering/teal.reporter/actions/workflows/docs.yaml/badge.svg)](https://insightsengineering.github.io/teal.reporter/latest-tag/)
+📚](https://github.com/pharmaverse/teal.reporter/actions/workflows/docs.yaml/badge.svg)](https://pharmaverse.github.io/teal.reporter/latest-tag/)
 [![Code Coverage
-📔](https://raw.githubusercontent.com/insightsengineering/teal.reporter/_xml_coverage_reports/data/main/badge.svg)](https://insightsengineering.github.io/teal.reporter/main/coverage-report/)
+📔](https://raw.githubusercontent.com/pharmaverse/teal.reporter/_xml_coverage_reports/data/main/badge.svg)](https://pharmaverse.github.io/teal.reporter/main/coverage-report/)
 
 ![GitHub
-forks](https://img.shields.io/github/forks/insightsengineering/teal.reporter?style=social)![GitHub
+forks](https://img.shields.io/github/forks/pharmaverse/teal.reporter?style=social)![GitHub
 Repo
-stars](https://img.shields.io/github/stars/insightsengineering/teal.reporter?style=social)
+stars](https://img.shields.io/github/stars/pharmaverse/teal.reporter?style=social)
 
 ![GitHub commit
-activity](https://img.shields.io/github/commit-activity/m/insightsengineering/teal.reporter)![GitHub
-contributors](https://img.shields.io/github/contributors/insightsengineering/teal.reporter)![GitHub
+activity](https://img.shields.io/github/commit-activity/m/pharmaverse/teal.reporter)![GitHub
+contributors](https://img.shields.io/github/contributors/pharmaverse/teal.reporter)![GitHub
 last
-commit](https://img.shields.io/github/last-commit/insightsengineering/teal.reporter)![GitHub
+commit](https://img.shields.io/github/last-commit/pharmaverse/teal.reporter)![GitHub
 pull
-requests](https://img.shields.io/github/issues-pr/insightsengineering/teal.reporter)![GitHub
+requests](https://img.shields.io/github/issues-pr/pharmaverse/teal.reporter)![GitHub
 repo
-size](https://img.shields.io/github/repo-size/insightsengineering/teal.reporter)![GitHub
+size](https://img.shields.io/github/repo-size/pharmaverse/teal.reporter)![GitHub
 language
-count](https://img.shields.io/github/languages/count/insightsengineering/teal.reporter)[![Project
+count](https://img.shields.io/github/languages/count/pharmaverse/teal.reporter)[![Project
 Status: Active – The project has reached a stable, usable state and is
 being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Current
-Version](https://img.shields.io/github/r-package/v/insightsengineering/teal.reporter/main?color=purple&label=package%20version)](https://github.com/insightsengineering/teal.reporter/tree/main)
+Version](https://img.shields.io/github/r-package/v/pharmaverse/teal.reporter/main?color=purple&label=package%20version)](https://github.com/pharmaverse/teal.reporter/tree/main)
 [![Open
-Issues](https://img.shields.io/github/issues-raw/insightsengineering/teal.reporter?color=red&label=open%20issues)](https://github.com/insightsengineering/teal.reporter/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+Issues](https://img.shields.io/github/issues-raw/pharmaverse/teal.reporter?color=red&label=open%20issues)](https://github.com/pharmaverse/teal.reporter/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
 
 `teal.reporter` empowers both `shiny` and `teal` applications to
 seamlessly integrate reporting functionality. Developers, whether
@@ -60,24 +60,24 @@ Alternatively, you might want to use the development version.
 
 \
 `# install.packages("pak")`\
-`pak``::`[`pak`](https://pak.r-lib.org/reference/pak.html)`(``"insightsengineering/teal.reporter"``)`
+`pak``::`[`pak`](https://pak.r-lib.org/reference/pak.html)`(``"pharmaverse/teal.reporter"``)`
 
 ## Usage
 
 To understand how to use this package, please refer to the [Getting
-Started](https://insightsengineering.github.io/teal.reporter/latest-tag/articles/getting-started-with-teal-reporter.html)
+Started](https://pharmaverse.github.io/teal.reporter/latest-tag/articles/getting-started-with-teal-reporter.html)
 article, which provides multiple examples of code implementation.
 
 Overall functionalities
 
-![Showcase](https://github.com/insightsengineering/teal.reporter/blob/main/assets/img/showcase.gif)
+![Showcase](https://github.com/pharmaverse/teal.reporter/blob/main/assets/img/showcase.gif)
 
 Showcase
 
 Previewer Editor
 
 ![Editor
-Showcase](https://github.com/insightsengineering/teal.reporter/blob/main/assets/img/editor_showcase.gif)
+Showcase](https://github.com/pharmaverse/teal.reporter/blob/main/assets/img/editor_showcase.gif)
 
 Editor Showcase
 

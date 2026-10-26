@@ -55,7 +55,7 @@ An object of class `code_chunk`
 1.  Create a `code_chunk` object with your code and options
 
 2.  Add it to a `teal_card` using
-    [`teal_card()`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)
+    [`teal_card()`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)
     or [`c()`](https://rdrr.io/r/base/c.html)
 
 3.  The card produces the formatted code block in the final document
@@ -63,7 +63,7 @@ An object of class `code_chunk`
 
 ## See also
 
-- [`teal_card()`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)
+- [`teal_card()`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)
   for creating report cards that can contain `code_chunk` objects
 
 ## Examples

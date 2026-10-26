@@ -34,9 +34,8 @@ as.teal_report(x)
   provided in `...`. Note this code is not executed and the `teal_data`
   may not be reproducible
 
-  Use
-  [`verify()`](https://insightsengineering.github.io/teal.data/latest-tag/reference/verify.html)
-  to verify code reproducibility.
+  Use [`verify()`](https://rdrr.io/pkg/teal.data/man/verify.html) to
+  verify code reproducibility.
 
 - join_keys:
 
@@ -54,7 +53,7 @@ A `teal_report` object.
 
 ## See also
 
-[`teal.data::teal_data`](https://insightsengineering.github.io/teal.data/latest-tag/reference/teal_data.html)
+[`teal.data::teal_data`](https://rdrr.io/pkg/teal.data/man/teal_data.html)
 
 ## Examples
 
@@ -250,10 +249,10 @@ teal_card(report) <- c(
 
 # View the generated card with code chunks
 teal_card(report)
-#> $`54e3255b`
+#> $df745722
 #> [1] "## Analysis Report"
 #> 
-#> $acaf0253
+#> $`3b992662`
 #> [1] "data <- iris"
 #> attr(,"params")
 #> list()
@@ -262,7 +261,7 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $bff229e7
+#> $cd07ceb9
 #> [1] "summary_stats <- summary(data)"
 #> attr(,"params")
 #> list()
@@ -271,7 +270,7 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $d6a0a17a
+#> $`5cdf1f3d`
 #> [1] "head(iris)"
 #> attr(,"params")
 #> list()
@@ -280,7 +279,7 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $`87d62a49`
+#> $`7379a0f9`
 #> [[1]]
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
@@ -293,10 +292,10 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "chunk_output"
 #> 
-#> $`4b1641a6`
+#> $`4a92e187`
 #> [1] "### Conclusion"
 #> 
-#> $c9239810
+#> $d69a7c1d
 #> [1] "The analysis is complete."
 #> 
 #> attr(,"class")
@@ -366,10 +365,10 @@ The analysis is complete.
 
 if ([interactive](https://rdrr.io/r/base/interactive.html)()) { \#
 Render the report to various formats
-[render](https://insightsengineering.github.io/teal.reporter/reference/render.md)(report,
+[render](https://pharmaverse.github.io/teal.reporter/reference/render.md)(report,
 output_format =
 rmarkdown::[html_document](https://pkgs.rstudio.com/rmarkdown/reference/html_document.html)())
-[render](https://insightsengineering.github.io/teal.reporter/reference/render.md)(report,
+[render](https://pharmaverse.github.io/teal.reporter/reference/render.md)(report,
 output_format =
 rmarkdown::[pdf_document](https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html)())
 }

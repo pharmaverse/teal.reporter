@@ -25,7 +25,7 @@ CRAN release: 2026-02-20
 
 - Prevents warning message when joining two `teal_card` objects that
   have items with the same id
-  ([\#455](https://github.com/insightsengineering/teal.reporter/issues/455)).
+  ([\#455](https://github.com/pharmaverse/teal.reporter/issues/455)).
 
 ## teal.reporter 0.6.0
 
@@ -39,7 +39,7 @@ CRAN release: 2025-11-15
   all its functionalities in a S4 with less complexity. It allows for
   easier modifications and insertion of new report content.
 - Adds `teal_report` class that extends from
-  [`teal.data::teal_data`](https://insightsengineering.github.io/teal.data/latest-tag/reference/teal_data.html)
+  [`teal.data::teal_data`](https://rdrr.io/pkg/teal.data/man/teal_data.html)
   that allows to keep contents of the report card.
 - `teal_report` is updated automatically with executed code and its
   outputs are stored as well.
@@ -53,23 +53,23 @@ CRAN release: 2025-08-18
 #### Breaking changes
 
 - The functions
-  [`reporter_previewer_ui()`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer_deprecated.md)
+  [`reporter_previewer_ui()`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer_deprecated.md)
   and
-  [`reporter_previewer_srv()`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer_deprecated.md)
+  [`reporter_previewer_srv()`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer_deprecated.md)
   are deprecated and will be removed in a future release. Please migrate
   to using the underlying shiny modules independently:
   - **UI**:
-    [`report_load_ui()`](https://insightsengineering.github.io/teal.reporter/reference/load_report_button.md),
-    [`download_report_button_ui()`](https://insightsengineering.github.io/teal.reporter/reference/download_report_button.md),
-    [`reset_report_button_ui()`](https://insightsengineering.github.io/teal.reporter/reference/reset_report_button.md),
+    [`report_load_ui()`](https://pharmaverse.github.io/teal.reporter/reference/load_report_button.md),
+    [`download_report_button_ui()`](https://pharmaverse.github.io/teal.reporter/reference/download_report_button.md),
+    [`reset_report_button_ui()`](https://pharmaverse.github.io/teal.reporter/reference/reset_report_button.md),
     and
-    [`preview_report_button_ui()`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer.md)
+    [`preview_report_button_ui()`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer.md)
   - **Server**:
-    [`report_load_srv()`](https://insightsengineering.github.io/teal.reporter/reference/load_report_button.md),
-    [`download_report_button_srv()`](https://insightsengineering.github.io/teal.reporter/reference/download_report_button.md),
-    [`reset_report_button_srv()`](https://insightsengineering.github.io/teal.reporter/reference/reset_report_button.md),
+    [`report_load_srv()`](https://pharmaverse.github.io/teal.reporter/reference/load_report_button.md),
+    [`download_report_button_srv()`](https://pharmaverse.github.io/teal.reporter/reference/download_report_button.md),
+    [`reset_report_button_srv()`](https://pharmaverse.github.io/teal.reporter/reference/reset_report_button.md),
     and
-    [`preview_report_button_srv()`](https://insightsengineering.github.io/teal.reporter/reference/reporter_previewer.md)
+    [`preview_report_button_srv()`](https://pharmaverse.github.io/teal.reporter/reference/reporter_previewer.md)
 
 #### Enhancements
 
@@ -79,7 +79,7 @@ CRAN release: 2025-08-18
   create a shiny module that creates a button to open the report
   previewer in a modal.
 - Improve error message when reporter zip file is not named correctly
-  ([\#365](https://github.com/insightsengineering/teal.reporter/issues/365))
+  ([\#365](https://github.com/pharmaverse/teal.reporter/issues/365))
 
 ## teal.reporter 0.4.0
 

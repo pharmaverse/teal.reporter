@@ -7,10 +7,10 @@ reproducible documents step by step by adding markdown content alongside
 code chunks evaluation.
 
 The `teal_report` class is built on top of
-[`teal_data`](https://insightsengineering.github.io/teal.data/latest-tag/articles/teal-data.html),
+[`teal_data`](https://pharmaverse.github.io/teal.data/latest-tag/articles/teal-data.html),
 inheriting all its reproducibility and code-tracking capabilities while
 adding reporting-specific functionality through
-[`teal_card()`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md).
+[`teal_card()`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md).
 
 This vignette shows you how to build `teal_report` object and add or
 remove its content.
@@ -27,8 +27,8 @@ empty `teal_report` and build up your data and analysis using
 [`within()`](https://rdrr.io/r/base/with.html):
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.reporter`](https://github.com/insightsengineering/teal.reporter)`)`\
-`report`` ``<-`` `[`teal_report`](https://insightsengineering.github.io/teal.reporter/reference/teal_report.md)`(``)`
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.reporter`](https://github.com/pharmaverse/teal.reporter)`)`\
+`report`` ``<-`` `[`teal_report`](https://pharmaverse.github.io/teal.reporter/reference/teal_report.md)`(``)`
 
 ## Adding content to the `teal_report`
 
@@ -40,18 +40,18 @@ elements of the document. To add a new element in the `teal_card` one
 can use `c` method.
 
 \
-[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(`\
-`  `[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)``,`\
+[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(`\
+`  `[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)``,`\
 `  ``"## Document section"``,`\
 `  ``"Lorem ipsum dolor sit amet"`\
 `)`\
 \
-[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
+[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
 
-    ## $`7b7c329f`
+    ## $`80a30a3c`
     ## [1] "## Document section"
     ## 
-    ## $e0b0b244
+    ## $f73915df
     ## [1] "Lorem ipsum dolor sit amet"
     ## 
     ## attr(,"class")
@@ -63,7 +63,7 @@ can use `c` method.
 
 `teal_report` inherits all methods from `teal_data`. The class supports
 [`within()`](https://rdrr.io/r/base/with.html) and
-[`teal.code::eval_code()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/eval_code.html),
+[`teal.code::eval_code()`](https://rdrr.io/pkg/teal.code/man/eval_code.html),
 which execute arbitrary code in its environment. Consider this as
 executing a code chunk in an Rmarkdown document. In the same time you
 can access objects created during code execution.
@@ -77,15 +77,15 @@ can access objects created during code execution.
     ## [1] 2
 
 \
-[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
+[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
 
-    ## $`7b7c329f`
+    ## $`80a30a3c`
     ## [1] "## Document section"
     ## 
-    ## $e0b0b244
+    ## $f73915df
     ## [1] "Lorem ipsum dolor sit amet"
     ## 
-    ## $`2951951b`
+    ## $c454ccd3
     ## [1] "a <- 2"
     ## attr(,"params")
     ## list()
@@ -103,7 +103,7 @@ In the above chunk of code `a` is created but nothing has been output to
 the console nor to the graphic devices. In case one decides to print or
 plot, `teal_report` automatically captures outputs, which can be
 retrieved with
-[`teal.code::get_outputs()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_outputs.html).
+[`teal.code::get_outputs()`](https://rdrr.io/pkg/teal.code/man/get_outputs.html).
 
 \
 `report`` ``<-`` `[`within`](https://rdrr.io/r/base/with.html)`(``report``, ``{`\
@@ -111,7 +111,7 @@ retrieved with
 `  ``head_of_iris`\
 `}``)`\
 \
-`teal.code``::`[`get_outputs`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_outputs.html)`(``report``)`` ``# returns a list of all outputs`
+`teal.code``::`[`get_outputs`](https://rdrr.io/pkg/teal.code/man/get_outputs.html)`(``report``)`` ``# returns a list of all outputs`
 
     ## [[1]]
     ##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
@@ -130,29 +130,29 @@ list.
 
 \
 `# adding element at the beginning of the document`\
-[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(`[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``"# My report"``)``, `[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)``)`\
+[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`` ``<-`` `[`c`](https://rdrr.io/r/base/c.html)`(`[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``"# My report"``)``, `[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)``)`\
 \
 `# removing code_chunk(s)`\
-[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)`` ``<-`` `[`Filter`](https://rdrr.io/r/base/funprog.html)`(`\
+[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`` ``<-`` `[`Filter`](https://rdrr.io/r/base/funprog.html)`(`\
 `  ``function``(``x``)`` ``!`[`inherits`](https://rdrr.io/r/base/class.html)`(``x``, ``"code_chunk"``)``,`\
-`  `[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)`\
+`  `[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`\
 `)`\
 \
 `# replace an element`\
-[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)``[[``1``]``]`` ``<-`` ``"# My report (replaced)"`\
+[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)``[[``1``]``]`` ``<-`` ``"# My report (replaced)"`\
 \
-[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
+[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
 
-    ## $`3aa693b7`
+    ## $bf616e21
     ## [1] "# My report (replaced)"
     ## 
-    ## $`7b7c329f`
+    ## $`80a30a3c`
     ## [1] "## Document section"
     ## 
-    ## $e0b0b244
+    ## $f73915df
     ## [1] "Lorem ipsum dolor sit amet"
     ## 
-    ## $c54d820d
+    ## $`3af8ce60`
     ## [[1]]
     ##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
     ## 1          5.1         3.5          1.4         0.2  setosa
@@ -174,10 +174,10 @@ list.
 
 In Rmarkdown it is possible to specify certain parameters as a YAML
 header. `teal_report` allows to specify metadata using
-[`metadata()`](https://insightsengineering.github.io/teal.reporter/reference/metadata.md).
+[`metadata()`](https://pharmaverse.github.io/teal.reporter/reference/metadata.md).
 
 \
-[`metadata`](https://insightsengineering.github.io/teal.reporter/reference/metadata.md)`(`[`teal_card`](https://insightsengineering.github.io/teal.reporter/reference/teal_card.md)`(``report``)``)`` ``<-`` `[`list`](https://rdrr.io/r/base/list.html)`(`\
+[`metadata`](https://pharmaverse.github.io/teal.reporter/reference/metadata.md)`(`[`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)``)`` ``<-`` `[`list`](https://rdrr.io/r/base/list.html)`(`\
 `  title ``=`` ``"My Document"``,`\
 `  author ``=`` ``"NEST"`\
 `)`
@@ -202,7 +202,7 @@ formats](https://pkgs.rstudio.com/rmarkdown/reference/index.html#output-formats)
 and arguments.
 
 \
-[`render`](https://insightsengineering.github.io/teal.reporter/reference/render.md)`(``report``, output_format ``=`` ``rmarkdown``::`[`pdf_document`](https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html)`(``)``, global_knitr ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``fig.width ``=`` ``10``)``)`
+[`render`](https://pharmaverse.github.io/teal.reporter/reference/render.md)`(``report``, output_format ``=`` ``rmarkdown``::`[`pdf_document`](https://pkgs.rstudio.com/rmarkdown/reference/pdf_document.html)`(``)``, global_knitr ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``fig.width ``=`` ``10``)``)`
 
 ## Key Benefits
 
@@ -221,8 +221,8 @@ Using `teal_report` in your modules provides several advantages:
 
 For more details on the underlying `teal_data` functionality, see the
 [Introduction to
-teal.data](https://insightsengineering.github.io/teal.data/latest-tag/articles/teal-data.html).
+teal.data](https://pharmaverse.github.io/teal.data/latest-tag/articles/teal-data.html).
 
 For more information on the `teal_report` class usage in `teal`, see the
 [Adding support for Reproducible Report Documents in
-teal](https://insightsengineering.github.io/teal/latest-tag/articles/adding-support-for-reporting.html).
+teal](https://pharmaverse.github.io/teal/latest-tag/articles/adding-support-for-reporting.html).

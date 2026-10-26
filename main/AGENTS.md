@@ -49,8 +49,8 @@ Usage in other framework packages:
 - `teal`: uses the API in `teal.reporter` to maintain an instance of the
   reporter and uses the exported shiny modules for the interface
   - Converts the `data` argument in
-    [`teal::init()`](https://insightsengineering.github.io/teal/latest-tag/reference/init.html)
-    function to the `teal_report` object that is used in the modules
+    [`teal::init()`](https://rdrr.io/pkg/teal/man/init.html) function to
+    the `teal_report` object that is used in the modules
 - teal module: The `data` argument passed on to modules uses the
   `teal_report` data type.
   - Automatically tracks the code execution and output objects
@@ -71,7 +71,7 @@ users according to their specific needs. This can be achieved by:
   that is being added
 - Adding support for new data types or overwriting existing defaults
 
-[`to_rmd()`](https://insightsengineering.github.io/teal.reporter/reference/to_rmd.md)
+[`to_rmd()`](https://pharmaverse.github.io/teal.reporter/reference/to_rmd.md)
 (exported) and `toHTML()` (generic imported from tools) each have only a
 `.default` method, which delegates to the internal generics `.to_rmd()`
 / `.toHTML()`.

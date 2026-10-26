@@ -25,7 +25,7 @@ report_load_srv(id, reporter)
 
 - reporter:
 
-  [`Reporter`](https://insightsengineering.github.io/teal.reporter/reference/Reporter.md)
+  [`Reporter`](https://pharmaverse.github.io/teal.reporter/reference/Reporter.md)
   instance.
 
 ## Value

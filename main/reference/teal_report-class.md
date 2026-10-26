@@ -2,7 +2,7 @@
 
 Reproducible report container class. Inherits code tracking behavior
 from
-[`teal.data::teal_data`](https://insightsengineering.github.io/teal.data/latest-tag/reference/teal_data-class.html).
+[`teal.data::teal_data`](https://rdrr.io/pkg/teal.data/man/teal_data-class.html).
 
 ## Details
 
@@ -30,20 +30,20 @@ returned.
 
   (`list` of `character`) representing code necessary to reproduce the
   contents of `qenv`. Access with
-  [`teal.code::get_code()`](https://insightsengineering.github.io/teal.code/latest-tag/reference/get_code.html).
+  [`teal.code::get_code()`](https://rdrr.io/pkg/teal.code/man/get_code.html).
   No setter provided. Evaluate code to append code to the slot.
 
 - `join_keys`:
 
   (`join_keys`) object specifying joining keys for data sets in
   `@.xData`. Access or modify with
-  [`teal.data::join_keys()`](https://insightsengineering.github.io/teal.data/latest-tag/reference/join_keys.html).
+  [`teal.data::join_keys()`](https://rdrr.io/pkg/teal.data/man/join_keys.html).
 
 - `verified`:
 
   (`logical(1)`) flag signifying that code in `@code` has been proven to
   yield contents of `@.xData`. Used internally. See
-  [`teal.data::verify()`](https://insightsengineering.github.io/teal.data/latest-tag/reference/verify.html)
+  [`teal.data::verify()`](https://rdrr.io/pkg/teal.data/man/verify.html)
   for more details.
 
 - `card`:
