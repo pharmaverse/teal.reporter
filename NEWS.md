@@ -1,5 +1,10 @@
 # teal.reporter 0.6.3.9002
 
+### Miscellaneous
+
+* teal.reporter has moved to the pharmaverse GitHub organisation: https://github.com/pharmaverse/teal.reporter.
+* Appsilon becomes a core contributor and joins F. Hoffmann-La Roche AG as a copyright holder of teal.reporter, working alongside the wider contributor community.
+
 # teal.reporter 0.6.3
 
 ### Bug fixes
