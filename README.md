@@ -33,6 +33,8 @@ This package provides:
 * A `shiny` module for previewing the report on-screen
 * The ability to download a zip file containing the reports
 
+teal.reporter is developed by [Roche](https://roche.com), [Appsilon](https://www.appsilon.com), and the wider open-source community. [Roche](https://roche.com) and [Appsilon](https://www.appsilon.com) are copyright holders of the project, which is hosted in the [pharmaverse](https://pharmaverse.org) GitHub organisation.
+
 ## Installation
 
 ```r
@@ -61,3 +63,7 @@ Previewer Editor
 ## Getting help
 
 If you encounter a bug or have a feature request, please file an issue. For questions, discussions, and staying up to date, please use the `teal` channel in the [`pharmaverse` slack workspace](https://pharmaverse.slack.com).
+
+## Acknowledgment
+
+teal.reporter was created at [Roche](https://roche.com) and is developed together with [Appsilon](https://www.appsilon.com) and the wider open-source community. Thank you to everyone who has contributed code, reported an issue, improved the documentation, or built a module. To get involved, explore the [open issues](https://github.com/pharmaverse/teal.reporter/issues) or join the #teal channel in the [pharmaverse Slack](https://pharmaverse.slack.com/).

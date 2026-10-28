@@ -34,6 +34,7 @@ Other contributors:
 \itemize{
   \item Chendi Liao \email{chendi.liao@roche.com} [reviewer]
   \item F. Hoffmann-La Roche AG [copyright holder, funder]
+  \item Appsilon Sp. z o.o. \email{teal@appsilon.com} [copyright holder, funder]
 }
 
 }

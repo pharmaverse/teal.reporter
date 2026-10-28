@@ -13,7 +13,8 @@ Authors@R: c(
     person("Mahmoud", "Hallal", , "mahmoud.hallal@roche.com", role = "aut"),
     person("Chendi", "Liao", , "chendi.liao@roche.com", role = "rev"),
     person("Dony", "Unardi", , "unardid@gene.com", role = c("rev", "cre")),
-    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+    person("F. Hoffmann-La Roche AG", role = c("cph", "fnd")),
+    person("Appsilon Sp. z o.o.", email = "teal@appsilon.com", role = c("cph", "fnd"))
   )
 Description: Prebuilt 'shiny' modules containing tools for the generation
     of 'rmarkdown' reports, supporting reproducible research and analysis.
