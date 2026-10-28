@@ -93,10 +93,10 @@ report <- c(
 
 # Subset the report to keep only the first two elements
 report[1:2]
-#> $`4378c854`
+#> $f4d6240d
 #> [1] "## Headline"
 #> 
-#> $`4789b059`
+#> $`9425bfe0`
 #> [1] "This is `iris` table"
 #> 
 #> attr(,"class")

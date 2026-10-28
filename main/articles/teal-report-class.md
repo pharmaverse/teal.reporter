@@ -48,10 +48,10 @@ can use `c` method.
 \
 [`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
 
-    ## $`80a30a3c`
+    ## $dfddce88
     ## [1] "## Document section"
     ## 
-    ## $f73915df
+    ## $`855f9bd3`
     ## [1] "Lorem ipsum dolor sit amet"
     ## 
     ## attr(,"class")
@@ -79,13 +79,13 @@ can access objects created during code execution.
 \
 [`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
 
-    ## $`80a30a3c`
+    ## $dfddce88
     ## [1] "## Document section"
     ## 
-    ## $f73915df
+    ## $`855f9bd3`
     ## [1] "Lorem ipsum dolor sit amet"
     ## 
-    ## $c454ccd3
+    ## $`2542cd80`
     ## [1] "a <- 2"
     ## attr(,"params")
     ## list()
@@ -143,16 +143,16 @@ list.
 \
 [`teal_card`](https://pharmaverse.github.io/teal.reporter/reference/teal_card.md)`(``report``)`
 
-    ## $bf616e21
+    ## $`5fd33c1a`
     ## [1] "# My report (replaced)"
     ## 
-    ## $`80a30a3c`
+    ## $dfddce88
     ## [1] "## Document section"
     ## 
-    ## $f73915df
+    ## $`855f9bd3`
     ## [1] "Lorem ipsum dolor sit amet"
     ## 
-    ## $`3af8ce60`
+    ## $c2d8ab90
     ## [[1]]
     ##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
     ## 1          5.1         3.5          1.4         0.2  setosa

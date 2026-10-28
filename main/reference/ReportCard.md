@@ -447,12 +447,12 @@ card <- ReportCard$new()$append_text("Some text")$append_plot(
 #> `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
 card$get_content()
 
-#> $d26e5880
+#> $`2b162095`
 #> [1] "Some text"
 #> 
-#> $`78feb7a3`
+#> $d942e1ad
 #> 
-#> $`44527ed6`
+#> $`4fd5049d`
 #> [1] "Some text"
 #> 
 #> attr(,"class")
@@ -488,12 +488,12 @@ card <- ReportCard$new()$append_text("Some text")$append_plot(
 #> `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
 card$get_content()
 
-#> $`577d291c`
+#> $`9c0f60d2`
 #> [1] "Some text"
 #> 
-#> $`53439315`
+#> $`111f57b1`
 #> 
-#> $de8e0325
+#> $`4b73411e`
 #> [1] "Some text"
 #> 
 #> attr(,"class")
@@ -513,12 +513,12 @@ card$get_content()
 card$to_list(tempdir())
 #> Warning: The `output_dir` argument of `ReportCard$to_list()` is deprecated as of
 #> teal.reporter 0.6.0.
-#> $`577d291c`
+#> $`9c0f60d2`
 #> [1] "Some text"
 #> 
-#> $`53439315`
+#> $`111f57b1`
 #> 
-#> $de8e0325
+#> $`4b73411e`
 #> [1] "Some text"
 #> 
 #> attr(,"metadata")
@@ -541,12 +541,12 @@ card <- ReportCard$new()$append_text("Some text")$append_plot(
 #> `stat_bin()` using `bins = 30`. Pick better value `binwidth`.
 card$get_content()
 
-#> $`9b947341`
+#> $bae566da
 #> [1] "Some text"
 #> 
-#> $cf807b23
+#> $`62b45d82`
 #> 
-#> $ac7466c0
+#> $`03407505`
 #> [1] "Some text"
 #> 
 #> attr(,"class")
@@ -614,7 +614,7 @@ card <- ReportCard$new()$append_content(code_chunk("foo <- 2"))
 card <- ReportCard$new()$append_text("Some text")$append_metadata("rc", "a <- 2 + 2")
 
 card$get_content()
-#> $b6462506
+#> $ab8439af
 #> [1] "Some text"
 #> 
 #> attr(,"class")

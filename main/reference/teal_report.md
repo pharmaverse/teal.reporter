@@ -249,10 +249,10 @@ teal_card(report) <- c(
 
 # View the generated card with code chunks
 teal_card(report)
-#> $df745722
+#> $`8511f47b`
 #> [1] "## Analysis Report"
 #> 
-#> $`3b992662`
+#> $`15c9ac6b`
 #> [1] "data <- iris"
 #> attr(,"params")
 #> list()
@@ -261,7 +261,7 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $cd07ceb9
+#> $f7ba6977
 #> [1] "summary_stats <- summary(data)"
 #> attr(,"params")
 #> list()
@@ -270,7 +270,7 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $`5cdf1f3d`
+#> $b65ae16e
 #> [1] "head(iris)"
 #> attr(,"params")
 #> list()
@@ -279,7 +279,7 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "code_chunk"
 #> 
-#> $`7379a0f9`
+#> $d3ab8aeb
 #> [[1]]
 #>   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 #> 1          5.1         3.5          1.4         0.2  setosa
@@ -292,10 +292,10 @@ teal_card(report)
 #> attr(,"class")
 #> [1] "chunk_output"
 #> 
-#> $`4a92e187`
+#> $`2f900382`
 #> [1] "### Conclusion"
 #> 
-#> $d69a7c1d
+#> $`669779e8`
 #> [1] "The analysis is complete."
 #> 
 #> attr(,"class")

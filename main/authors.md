@@ -21,6 +21,8 @@
 
 - **F. Hoffmann-La Roche AG**. Copyright holder, funder.
 
+- **Appsilon Sp. z o.o.**. Copyright holder, funder.
+
 ## Citation
 
 Source:
